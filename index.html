@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    button:hover {color: rgb(196, 0, 0);
+    background-color: rgb(0, 0, 0);}
+    img {height: 80%; width: 90%;}
+    div {width: 210px; height: 300px; float: left;}
+    button{
+        background-color: rgb(18, 18, 18);
+        color: aliceblue;}
+        body{
+            background-color: #121212;
+        }
+        p{
+            color: rgb(196, 0, 0);
+        }
+   </style>
+</head>
+<body>
+    <h1>contador de cliques</h1>
+    <div id="gojo"><img src="gojo.gif" alt="">
+ <button onclick="a1()">Vote em mim</button></div>
+
+<div id="sukuna" ><img src="suk.gif" alt="">
+    <button onclick="a2()">Vote em mim</button></div>
+
+    <div id="toji"><img src="toji.gif" alt="">
+       <button onclick="a3()">Vote em mim</button></div>
+
+    <section id="s1">
+        <p>Candidato A: <mark>0</mark> votos!!</p>
+    </section>
+    <section id="s2">
+        <p>Candidato B: <mark>0</mark> votos!!</p> 
+       </section>
+    <section id="s3">
+        <p>Candidato C: <mark>0</mark> votos!!</p>   
+     </section>
+   
+</body>
+<script>
+    let contador1 = 0
+    let contador2 = 0
+    let contador3 = 0
+
+   let vot1 = document.querySelector (`section#s1`)
+   let vot2 = document.querySelector (`section#s2`)
+   let vot3 = document.querySelector (`section#s3`)
+   function a1() {
+    contador1++
+    vot1.innerHTML = `<p>Candidato A: <mark>${contador1}</mark> votos!!</p>`
+   }
+   function a2() {
+    contador2++
+    vot2.innerHTML = `<p>Candidato B: <mark>${contador2}</mark> votos!!</p>`
+   }
+   function a3() {
+    contador3++
+    vot3.innerHTML = `<p>Candidato C: <mark>${contador3}</mark> votos!!</p>`
+   }
+        </script>
+</html>
